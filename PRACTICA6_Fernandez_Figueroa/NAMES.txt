@@ -1,0 +1,6 @@
+GROUPO/GROUP :
+NOMBRE/NAME 1:
+NOMBRE/NAME 2:
+2A
+Gonzalo Fernández Megía
+Gonzalo Figueroa del Val

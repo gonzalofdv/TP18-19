@@ -1,0 +1,12 @@
+P2:
+
+Añadid un ZombieFactory de cara a la P3.
+Los GamePrinter no deberían recibir un número de filas y columnas de la matriz, ya que es el método encodeGame el que se encarga de seleccionar el tamaño de la matriz.
+
+P3:
+
+A la hora de añadir una planta, es la clase Game la que debe comprobar que se hace en una posición libre, y que está dentro del tablero, y lanzar una excepción en caso contrario. Por eso, deberíais mover todas las comprobaciones que hacéis en AddCommand.execute() a la clase Game.
+
+Los parseInt que hacéis dentro de load() pueden lanzar un NumberFormatException. Capturáis este tipo de excepciones dentro de LoadCommand. Creo que la excepción NumberFormatException es una excepción "interna" al procedimiento de carga, por lo que deberíais capturarla dentro de load(), y lanzar un FileContentsException desde load() en caso de que se produzca.
+
+De momento no abro esta tarea para reentrega. Simon os comunicará más adelante cómo debéis reentregar la práctica con los cambios que veáis oportunos para antes del examen.
